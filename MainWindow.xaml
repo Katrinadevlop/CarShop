@@ -17,7 +17,7 @@
                 <Label Content="Mercedes-Benz V-Класс Extra Long 200 d экстра длинный, 2018" Width="355" Margin="214,304,214,74"/>
                 <Image HorizontalAlignment="Left" Height="100" Margin="31,48,0,0" VerticalAlignment="Top" Width="100"/>
                 <Image HorizontalAlignment="Left" Height="100" Margin="31,180,0,0" VerticalAlignment="Top" Width="100"/>
-                <Image HorizontalAlignment="Left" Height="100" Margin="31,310,0,0" VerticalAlignment="Top" Width="100"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="31,310,0,0" VerticalAlignment="Top" Width="100" />
             </Grid>
         </ScrollViewer>
 
