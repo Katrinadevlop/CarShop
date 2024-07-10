@@ -1,0 +1,15 @@
+C:\Users\katya\source\repos\CarShopWpf\bin\Debug\CarShopWpf.exe.config
+C:\Users\katya\source\repos\CarShopWpf\bin\Debug\CarShopWpf.exe
+C:\Users\katya\source\repos\CarShopWpf\bin\Debug\CarShopWpf.pdb
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.csproj.AssemblyReference.cache
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\MainWindow.g.cs
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\App.g.cs
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf_MarkupCompile.cache
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\MainWindow.baml
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.g.resources
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.Properties.Resources.resources
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.csproj.GenerateResource.cache
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.csproj.CoreCompileInputs.cache
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.exe
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf.pdb
+C:\Users\katya\source\repos\CarShopWpf\obj\Debug\CarShopWpf_MarkupCompile.lref

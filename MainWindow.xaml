@@ -1,0 +1,30 @@
+﻿<Window x:Class="CarShopWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarShopWpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer Margin="0,25,0,0">
+            <Grid>
+                <Label Content="Mercedes-Benz V-Класс Extra Long 200 d экстра длинный, 2018" Width="355" Margin="214,32,214,346"/>
+                <Button Content="В корзину" HorizontalAlignment="Left" Margin="652,63,0,0" VerticalAlignment="Top" Height="27" Width="97"/>
+                <Button Content="В корзину" HorizontalAlignment="Left" Margin="652,190,0,0" VerticalAlignment="Top" Height="27" Width="97"/>
+                <Button Content="В корзину" HorizontalAlignment="Left" Margin="652,304,0,0" VerticalAlignment="Top" Height="27" Width="97"/>
+                <Label Content="Mercedes-Benz V-Класс Extra Long 200 d экстра длинный, 2018" Width="355" Margin="214,172,214,206"/>
+                <Label Content="Mercedes-Benz V-Класс Extra Long 200 d экстра длинный, 2018" Width="355" Margin="214,304,214,74"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="31,48,0,0" VerticalAlignment="Top" Width="100"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="31,180,0,0" VerticalAlignment="Top" Width="100"/>
+                <Image HorizontalAlignment="Left" Height="100" Margin="31,310,0,0" VerticalAlignment="Top" Width="100"/>
+            </Grid>
+        </ScrollViewer>
+
+        <Menu Height="20" VerticalAlignment="Top">
+            <MenuItem Header="Главное меню" ></MenuItem>
+            <MenuItem Header="Корзина" ></MenuItem>
+            <MenuItem Header="Профиль" ></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
