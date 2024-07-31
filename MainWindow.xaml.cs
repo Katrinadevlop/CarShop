@@ -29,14 +29,14 @@ namespace CarShopWpf
             var mainMenuTab = MainTabControl.Items.Cast<TabItem>().FirstOrDefault(item => item.Header.ToString() == "Главное меню");
             var basketTab = MainTabControl.Items.Cast<TabItem>().FirstOrDefault(item => item.Header.ToString() == "Корзина");
             var profilTab = MainTabControl.Items.Cast<TabItem>().FirstOrDefault(item => item.Header.ToString() == "Профиль");
-            db = new AppContent();
+            /*db = new AppContent();
             List<Registrations> registrations = db.Registrations.ToList();
             string str = "";
             foreach (Registrations registration in registrations)
             {
                 str += "Name " + registration.Name + " Surname " + registration.Surname;
             }
-            list.Items.Add(str);
+            list.Items.Add(str);*/
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
