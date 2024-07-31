@@ -1,5 +1,5 @@
-﻿using CarShopWpf.Data;
-using System;
+﻿using System;
+using System.Data.SQLite;
 using System.Collections.Generic;
 using System.Data.Entity.Validation;
 using System.Linq;
@@ -7,6 +7,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Configuration;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -15,13 +16,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CarShopWpf.Data;
 
 namespace CarShopWpf
 {
     public partial class MainWindow : Window
     {
-        AppContent db;
 
+        AppContent db;
         public MainWindow()
         {
             InitializeComponent();
@@ -29,14 +31,15 @@ namespace CarShopWpf
             var mainMenuTab = MainTabControl.Items.Cast<TabItem>().FirstOrDefault(item => item.Header.ToString() == "Главное меню");
             var basketTab = MainTabControl.Items.Cast<TabItem>().FirstOrDefault(item => item.Header.ToString() == "Корзина");
             var profilTab = MainTabControl.Items.Cast<TabItem>().FirstOrDefault(item => item.Header.ToString() == "Профиль");
-            /*db = new AppContent();
+
+            db = new AppContent();
             List<Registrations> registrations = db.Registrations.ToList();
             string str = "";
             foreach (Registrations registration in registrations)
             {
                 str += "Name " + registration.Name + " Surname " + registration.Surname;
             }
-            list.Items.Add(str);*/
+            list.Items.Add(str);
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -88,7 +91,6 @@ namespace CarShopWpf
             string numberPhone = numberProneTextBox.Text;
             string city = cityTextBox.Text;
             string password = passwordTextBox.Text;
-            MessageBox.Show(password);
 
             Registrations registrationTab = new Registrations(name, surname, patronymic, numberPhone, city, password);
 
@@ -111,7 +113,24 @@ namespace CarShopWpf
                     }
                 }
             }
+            /* string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
 
+             using (var connection = new SQLiteConnection(connectionString))
+             {
+                 connection.Open();
+
+                 // Пример выполнения запроса
+                 string sql = "SELECT * FROM Registrations";
+                 using (var command = new SQLiteCommand(sql, connection))
+                 using (var reader = command.ExecuteReader())
+                 {
+                     while (reader.Read())
+                     {
+                        MessageBox.Show($"{reader["id_person"]}, {reader["name"]}, {reader["surname"]}");
+
+                     }
+                 }
+             }*/
         }
     }
 }
